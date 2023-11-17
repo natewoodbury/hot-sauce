@@ -40,6 +40,11 @@ flex-direction: column;
     color: white;
     text-align: center;
     margin: 25px;
+
+}
+a:hover {
+    background-color: rgb(5, 70, 49);
+    transition: .25s;
 }
 .content-main img {
     margin: 50px;
