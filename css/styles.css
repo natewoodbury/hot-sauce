@@ -7,7 +7,7 @@
     
 }
 body {
-    background-image: url(https://images.unsplash.com/photo-1494642902649-ec7b992a0f5b?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.pexels.com/photos/5792418/pexels-photo-5792418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     background-color: #cccccc; /* Used if the image is unavailable */
     height: 900px; /* You must set a specified height */
     background-position: center; /* Center the image */
@@ -22,24 +22,29 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 800;
+  
 }
 .content-main {
     margin-top: 100px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
 flex-direction: column;
 }
 
+
 .content-main a {
     border: 1px solid black;
-    padding: 5px 15px;
+    padding: 7px 18px;
     border-radius: 1em;
+
     text-decoration: none;
     background-color: black;
     color: white;
     text-align: center;
     margin: 25px;
+    font-size: 1.5em;
 
 }
 a:hover {
@@ -48,9 +53,12 @@ a:hover {
 }
 .content-main img {
     margin: 50px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 2em;
+    box-shadow: 1px black;
 }
 img {
-    width: 200px;
+    width: 350px;
 }
 
 .container-lg {
