@@ -1,27 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>Tumwater Hot Sauce</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tumwater Hot Sauce Co.</title>
-    <link rel="stylesheet" href="css/styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Outfit", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("images/tumwter-green-alt.jpg");
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
 </head>
 
-<body class="container-lg">
-    <section class="content-main">
-     
-    </section>
-    <section class="content-main">
-        <h1>Believe the Heat.
-        </h1>
-        <img src="images/slice1.png" alt="text">
-        <a href="https://forms.gle/3hysDfjSUCcq7U1M9">Learn More</a>
-    </section>
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">HOME</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#menu" class="w3-button w3-block w3-black">SAUCES</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#where" class="w3-button w3-block w3-black">TUMWATER</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Believe the Heat</span>
+        </div>
+        <!-- <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px" style="font-weight: bold;">Tumwater<br>Hot Sauce</span>
+  </div> -->
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Bottled in Tumwater, Washington</span>
+        </div>
+    </header>
+
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- About Container -->
+        <div class="w3-container" id="about">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE SAUCE</span></h5>
+                <p>Thanks for being interested in Tumwater Hot Sauce! A couple of notes:</p>
+<p>
+
+                    The sauces are bottled at home for now and are consumed at your own risk.
+                      I do have a food handlers permit for the state of Washington and use best practices for home bottled goods including sanitization and food safety. 
+                      </p>
+                    Please let me know if you run into any issues with freshness. I'm always looking to improve my process. 
+                    <a href="mailto:nathan@tumwaterhotsauce.com">nathan@tumwaterhotsauce.com</a>
+                    Bottles should be stored in a cool dark place until ready to consume. 
+                    Refrigerate after opening.
+                    
+                    </p>
+                
+                <!-- <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is
+                            the new sweet.</i></p>
+                    <p>Chef, Spicelord and Owner: Nathan Woodbury</p>
+                </div> -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScn9YpHbC8ibXsEgxy0cyN1ucpSDbg4aONeRiEJpSBx0m-GgQ/viewform?usp=sf_link"
+                    class="w3-margin-top w3-button w3-green" type="submit">I'M INTERESTED</a>
+                <img src="images/slice1.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+                <!-- <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+                <p><strong>Address:</strong> 15 Adr street, 5015, NY</p> -->
+            </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="menu">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE SAUCES</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                        <div class="w3-col s6 tablink">Green</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                        <div class="w3-col s6 tablink">Seasonal</div>
+                    </a>
+                </div>
+
+                <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Jalapenos</h5>
+                    <p class="w3-text-grey">Scoville Rating: 1200 | Fresh and Bright Adds the heat and the flavor.</p>
+                    <br>
+
+                    <h5>Serranos</h5>
+                    <p class="w3-text-grey">Scoville Rating 900 | Earthy and punchy brings exteneded burn to the heat.
+                    </p><br>
+
+                    <h5>Green Peppers</h5>
+                    <p class="w3-text-grey">Rounds out the flavor of the peppers bringing them all together.</p><br>
+
+                    <h5>Lime & Orange Juices</h5>
+                    <p class="w3-text-grey">Brightens and enhances the flavors. Gives it a nice zing.</p><br>
+
+                    <h5>Spices</h5>
+                    <p class="w3-text-grey">Salt, Pepper and other spices add complexity.</p>
+                </div>
+
+                <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Strawbery Habenero</h5>
+                    <p class="w3-text-grey">A blend of summer strawberries and bright habenros. Inspired by the biggest
+                        of city burritos.</p><br>
+
+                    <h5>Blackberry Serrano</h5>
+                    <p class="w3-text-grey">Fresh blackberries from the invasive bushes all over the state.</p><br>
+
+                    <h5>Smoky Pine & Poblano</h5>
+                    <p class="w3-text-grey">Complicated sauce that tasts like someone set fire to the cascades.</p><br>
+
+                    <h5>Unamed Sauce #5</h5>
+                    <p class="w3-text-grey">Mystery sauce with mysterious flavors.</p><br>
+
+                    <h5>Rainier Cherry Bomb</h5>
+                    <p class="w3-text-grey">Rainier Cherries, Naga Chilis and whatever else we had laying around.</p>
+                </div>
+                <!-- <img src="images/pexels-nataliya-vaitkevich-5792418.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+            </div>
+        </div>
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+                <p>Bottling from delicous Tumwater Washington.</p>
+                <img src="images/tumwater-aerial.png" class="w3-image" style="width:100%">
+                <p><span class="w3-tag">FYI!</span> I usually make sauce on the first weekend of the month. orders outside of that time frame may be delayed. If you want to be added to the ongoing order list let me know.
+                    If you would like to make a donation to cover the cost of materials then Venmo information is linked below. Recommended donation is $10 per bottle plus shipping ($6-8).</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScn9YpHbC8ibXsEgxy0cyN1ucpSDbg4aONeRiEJpSBx0m-GgQ/viewform?usp=sf_link"
+                    class="w3-margin-top w3-button w3-green" type="submit">I'M INTERESTED</a>
+                <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form> -->
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Copyright 2023 Tumwater Hot Sauce Co.</p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
 
 </body>
 
