@@ -316,7 +316,7 @@ a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  text-align: right;
+ 
 }
 .w3-disabled,
 .w3-btn:disabled,
@@ -823,6 +823,7 @@ a {
 }
 .w3-display-middle {
   position: absolute;
+;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
